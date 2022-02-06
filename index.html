@@ -7,30 +7,30 @@
     <title>Volunteer Form</title>
   </head>
   <body>
-    <form method="POST" action="">
+    <form method="POST" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
       <h1>Volunteer Form</h1>
       <fieldset style="max-width:400px;">
         <legend>My Info</legend>
         <div>
-          <label>First Name: <input type="text" name="" placeholder="Coco" required></label>
+          <label>First Name: <input type="text" name="first_name_field" placeholder="Coco" required></label>
         </div>
         <div>
-          <label>Last Name: <input type="text" name="" placeholder="Melon" required></label>
+          <label>Last Name: <input type="text" name="last_name_field" placeholder="Melon" required></label>
         </div>
         <div>
-          <label>Phone Number: <input type="tel" name="" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+          <label>Phone Number: <input type="tel" name="phone_field" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
         </div>
         <div>
-          <label>Email Address: <input type="email" name="" placeholder="cocomel0n@yourheart.com" required></label>
+          <label>Email Address: <input type="email" name="email_field" placeholder="cocomel0n@yourheart.com" required></label>
         </div>
         <div>
           <label>Gender:</label>
-          <label>Male <input type="radio" value="Male" name=""></label>
-          <label>Female <input type="radio" value="Female" name=""></label>
+          <label>Male <input type="radio" value="Male" name="gender_field"></label>
+          <label>Female <input type="radio" value="Female" name="gender_field"></label>
         </div>
         <div>
           <label for="age">Age:</label>
-          <select id="age" name="">
+          <select id="age" name="age_field">
             <option value="under 18">under 18</option>
             <option value="18-24">18-24</option>
             <option value="25-34">25-34</option>
@@ -50,33 +50,33 @@
           <label>Days Available:</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Sunday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Sunday</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Monday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Monday</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Tuesday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Tuesday</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Wednesday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Wednesday</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Thursday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Thursday</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Friday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Friday</label>
         </div>
         <div>
-          <label><input type="checkbox" value="Sunday" name=""> Saturday</label>
+          <label><input type="checkbox" value="Sunday" name="available_field[]"> Saturday</label>
         </div>
         <div>
           <label>Any Comments?</label>
         </div>
         <div>
-          <textarea name="" placeholder="Tell us how you feel" rows="10" cols="50"></textarea>
+          <textarea name="comments_field" placeholder="Tell us how you feel" rows="10" cols="50"></textarea>
         </div>
-        <input type="hidden" value="mbarrioga" name="">
+        <input type="hidden" value="mbarrioga" name="hidden_field">
       </fieldset>
 
       <input type="submit">
