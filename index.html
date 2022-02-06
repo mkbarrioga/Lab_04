@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Form</title>
+  </head>
+  <body>
+    <form method="POST" action="">
+      <h1>Volunteer Form</h1>
+      <fieldset style="max-width:400px;">
+        <legend>My Info</legend>
+        <div>
+          <label>First Name: <input type="text" name="" placeholder="Coco" required></label>
+        </div>
+        <div>
+          <label>Last Name: <input type="text" name="" placeholder="Melon" required></label>
+        </div>
+        <div>
+          <label>Phone Number: <input type="tel" name="" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label>
+        </div>
+        <div>
+          <label>Email Address: <input type="email" name="" placeholder="cocomel0n@yourheart.com" required></label>
+        </div>
+        <div>
+          <label>Gender:</label>
+          <label>Male <input type="radio" value="Male" name=""></label>
+          <label>Female <input type="radio" value="Female" name=""></label>
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <select id="age" name="">
+            <option value="under 18">under 18</option>
+            <option value="18-24">18-24</option>
+            <option value="25-34">25-34</option>
+            <option value="35-44">35-44</option>
+            <option value="45-54">45-54</option>
+            <option value="55-64">55-64</option>
+            <option value="65 and over">65 and over</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <br>
+
+      <fieldset style="max-width:400px;">
+        <legend>My Availability</legend>
+        <div>
+          <label>Days Available:</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Sunday</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Monday</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Tuesday</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Wednesday</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Thursday</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Friday</label>
+        </div>
+        <div>
+          <label><input type="checkbox" value="Sunday" name=""> Saturday</label>
+        </div>
+        <div>
+          <label>Any Comments?</label>
+        </div>
+        <div>
+          <textarea name="" placeholder="Tell us how you feel" rows="10" cols="50"></textarea>
+        </div>
+        <input type="hidden" value="mbarrioga" name="">
+      </fieldset>
+
+      <input type="submit">
+      <input type="reset">
+
+    </form>
+  </body>
+</html>
